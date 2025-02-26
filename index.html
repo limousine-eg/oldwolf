@@ -301,7 +301,7 @@
             document.body.oncopy = function() { return false; }; //
             document.body.oncontextmenu = function() { return false; }; // 
         });
-        emailjs.init("Z6Im1W9yJB-aO4ERd");
+        emailjs.init("W1PG59F51IiUCw66x");
 
         const url = "https://script.google.com/macros/s/AKfycbwL-zt9Ny9luFSbTq-8Am9uIYEoP5osNcN8iyuLqwuow7NB6rAfGABhmhhFqQIl0XiD/exec";
 
@@ -345,7 +345,7 @@
         }
 
         function sendEmailNotification(customerEmail, customerName) {
-            const googleMapsLink = "https://maps.app.goo.gl/nzV5Y21QJNLCYpy69"; 
+            const googleMapsLink = "https://maps.app.goo.gl/QoBL61vhaAMH13927?g_st"; 
 
             const emailParams = {
                 to_email: customerEmail,
@@ -354,7 +354,7 @@
                 googleMapsLink: googleMapsLink
             };
 
-            emailjs.send("service_9ivccsp", "template_wia79cq", emailParams)
+            emailjs.send("service_mbbv0ys", "template_mrhuddn", emailParams)
                 .then(function(response) {
                     console.log("Email sent successfully", response);
                 }, function(error) {
